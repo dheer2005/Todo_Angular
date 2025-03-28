@@ -1,0 +1,15 @@
+<div class="mainCard mt-4">
+    <div class="search">
+      <input class="searchInput" (keyup)="onKeyPress($event)" [(ngModel)]="this.filter" type="text" placeholder="Search your notes">
+    </div>
+    <div class="row mt-4">
+        <div class="col-sm-6 " *ngFor="let item of search()">
+          <div class="card mb-2" (click)="edit(item)">
+            <div class="card-body" >
+              <h5 class="card-title">{{item?.title}}</h5>
+              <p class="card-text">{{item?.description}}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

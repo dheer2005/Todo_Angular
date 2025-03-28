@@ -1,0 +1,36 @@
+<div class="container">
+    <form #form="ngForm">
+        <div class="addMain">
+            <div class="addHeader">
+                <div class="backBtn">
+                    <a class="" routerLink=""><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="deleteBtn">
+                    <a *ngIf="this.Id > 0" (click)="removeData(this.Id)"><i class="fa-solid fa-trash"></i></a>
+                </div>
+                
+                
+            </div>
+            <div class="addContent">
+               
+                <input type="text" [(ngModel)]="notesDto.title" #title="ngModel" name="title" id="" placeholder="Title" required>
+                @if((title.touched || title.dirty) && title.errors?.['required']){
+                    <em class="text-danger">Title is required</em>
+                }
+                 
+                <textarea name="description" #text="ngModel" [(ngModel)]="notesDto.description" placeholder="Description" rows="15" required></textarea>
+                @if((text.touched || text.dirty) && text.errors?.['required']){
+                    <em class="text-danger">Description is required</em>
+                }
+            </div>
+            @if(this.Id == 0){
+                <button class="btn btn-dark saveBtn" [disabled]="form.invalid" (click)="save()"><i class="fa-solid fa-check"></i></button>
+            } @else {
+                <button class="updateBtn btn btn-dark" (click)="findData(this.Id)"><i class="fa-solid fa-check"></i></button>
+            }
+            
+        </div>
+        
+    </form>
+    
+</div>

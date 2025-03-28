@@ -1,0 +1,108 @@
+.addMain{
+    width: 25rem;
+    height: 100%;
+}
+
+.addContent{
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.addHeader{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    height: 3.125rem;
+    /* border: 1px whitesmoke; */
+}
+
+.addHeader>button{
+    border-radius: 10px;
+    
+}
+.backBtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backBtn:hover{
+    background-color: #dbdbdb;
+}
+
+.backBtn>a{
+    color: black;
+}
+
+.deleteBtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteBtn:hover{
+    background-color: #dbdbdb;
+}
+
+/* .deleteBtn>a>i{
+    font-size: 15px;
+} */
+
+.addContent>input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.addContent>textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.addMain{
+    position: relative;
+}
+
+
+.saveBtn{
+    width: 70px;
+    height: 60px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 85vh;
+    left: 300px;
+}
+
+.updateBtn{
+    width: 70px;
+    height: 60px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 85vh;
+    left: 300px;
+   
+}

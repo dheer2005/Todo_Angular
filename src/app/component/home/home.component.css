@@ -1,0 +1,43 @@
+.main{
+    width: 25rem;
+    height: 100%;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    height: 3.125rem;
+    border: 1px whitesmoke;
+}
+
+.content{
+    margin: 10px;
+}
+
+
+
+.main{
+    position: relative;
+}
+.btn{
+    width: 70px;
+    height: 60px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 85vh;
+    left: 300px;
+}
